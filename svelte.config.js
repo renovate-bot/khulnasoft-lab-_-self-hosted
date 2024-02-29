@@ -31,8 +31,8 @@ const config = {
     prerender: {
       handleMissingId: 'ignore',
       crawl: true,
-    }
-  }
+    },
+  },
 };
 
 export default config;

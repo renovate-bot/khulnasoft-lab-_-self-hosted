@@ -16,7 +16,7 @@
 
   // Append usernames, and (if available) metrics to available socials
   let socials: UserSocial[] = socialNetworks.map((social, index) => {
-    const network: typeof SupportedSocials[number] = social.name;
+    const network: (typeof SupportedSocials)[number] = social.name;
     const metrics =
       data?.props[social.name.toLowerCase().replace(/\W/g, '')] || [];
     return { ...social, user: contact.socials[network], metrics };

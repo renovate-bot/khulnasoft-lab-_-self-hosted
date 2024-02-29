@@ -9,7 +9,6 @@
   </a>
 </p>
 
-
 ## Intro
 
 This is my personal website. It's configurable, so feel free to use it, or any parts of it for yourself :)
@@ -20,6 +19,7 @@ Data is fetched from external sources (GitHub, RSS, social platforms...), so no 
 Crafted with SvelteKit + TypeScript- prioritising SEO, performance, accessibility, and compatibility.<br>
 
 **Contents**
+
 - [**Intro**](#intro)
 - [**Usage Guides**](#developing)
   - [Developing](#developing)
@@ -35,7 +35,6 @@ Crafted with SvelteKit + TypeScript- prioritising SEO, performance, accessibilit
 <sub>A tutorial, for how to build something similar is available on **[DEV.to](https://dev.to/khulnasoft-lab/sveltekit-10-build-an-blog-fetching-posts-from-your-dev-profile-29f)**</sub>
 
 <sup>A mirror of this repository is available at **[codeberg.org/alicia/devolio](https://codeberg.org/alicia/devolio)**</sup>
-
 
 ### Pages
 
@@ -84,7 +83,6 @@ The about page has space for a short bio, profile image, work experience and tec
 <img width="800" src="https://i.ibb.co/2MrSN7F/about-page.png" />
 </p>
 
-
 </details>
 
 ### Tech
@@ -98,7 +96,6 @@ The about page has space for a short bio, profile image, work experience and tec
 ✅ Server-side rendering for good SEO<br>
 ✅ Meets accessibility standards<br>
 ✅ Fully responsive<br>
-
 
 </details>
 
@@ -390,7 +387,7 @@ To get started, fork the repo, make your changes, add, commit and push the code,
         <a href="https://github.com/KhulnaSoft-Lab">
             <img src="https://avatars.githubusercontent.com/u/1862727?v=4" width="80;" alt="KhulnaSoft-Lab"/>
             <br />
-            <sub><b>Alicia Sykes</b></sub>
+            <sub><b>KhulnaSoft Lab</b></sub>
         </a>
     </td>
     <td align="center">
@@ -417,14 +414,14 @@ To get started, fork the repo, make your changes, add, commit and push the code,
 
 ## License
 
-> _**[KhulnaSoft-Lab/Devolio](https://github.com/KhulnaSoft-Lab/devolio)** is licensed under [MIT](https://gist.github.com/KhulnaSoft-Lab/143d2ee01ccc5c052a17) © [Alicia Sykes](https://self-hosted.khulnasoft.com) 2022._<br> > <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>
+> _**[KhulnaSoft-Lab/Devolio](https://github.com/KhulnaSoft-Lab/devolio)** is licensed under [MIT](https://gist.github.com/KhulnaSoft-Lab/143d2ee01ccc5c052a17) © [KhulnaSoft Lab](https://self-hosted.khulnasoft.com) 2022._<br> > <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>
 
 <details>
 <summary>Expand License</summary>
 
 ```
 The MIT License (MIT)
-Copyright (c) Alicia Sykes <alicia@omg.com>
+Copyright (c) KhulnaSoft Lab <alicia@omg.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -450,7 +447,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <!-- License + Copyright -->
 <p  align="center">
-  <i>© <a href="https://self-hosted.khulnasoft.com">Alicia Sykes</a> 2023</i><br>
+  <i>© <a href="https://self-hosted.khulnasoft.com">KhulnaSoft Lab</a> 2023</i><br>
   <i>Licensed under <a href="https://gist.github.com/KhulnaSoft-Lab/143d2ee01ccc5c052a17">MIT</a></i><br>
   <a href="https://github.com/khulnasoft-lab"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <sup>Thanks for visiting :)</sup>

@@ -40,7 +40,7 @@
 
   interface Icon {
     box: number;
-    name: typeof availableIcons[number];
+    name: (typeof availableIcons)[number];
     svg: string;
   }
 

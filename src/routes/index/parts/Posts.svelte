@@ -1,13 +1,12 @@
 <script lang="ts">
-import Heading from '$src/components/Heading.svelte';
-import LinkButton from '$src/components/LinkButton.svelte';
-import { slugify, formatDate } from '$src/helpers/post-utils';
-import type { RssPosts } from '$src/types/RssXml';
+  import Heading from '$src/components/Heading.svelte';
+  import LinkButton from '$src/components/LinkButton.svelte';
+  import { slugify, formatDate } from '$src/helpers/post-utils';
+  import type { RssPosts } from '$src/types/RssXml';
 
-export let posts: RssPosts;
+  export let posts: RssPosts;
 
-export let accent = 'var(--accent)';
-
+  export let accent = 'var(--accent)';
 </script>
 
 <section class="blog-section" style="--accent:{accent};">
@@ -19,21 +18,23 @@ export let accent = 'var(--accent)';
       icon="website"
       priority="outline"
       textColor="var(--accent)"
-      target="_blank"
-    >View Blog</LinkButton>
+      target="_blank">View Blog</LinkButton
+    >
   </div>
   <ul>
     <li class="first"><span class="line">┬</span></li>
-  {#each posts.slice(0,50) as post, index }
-    <li title={`Published ${formatDate(post.pubDate)}`}>
-      <span class="line">{(index+1 === posts.length || index === 50) ? '└' : '├'}</span>
-      <a href="{`/blog/${slugify(post.title)}` || post.link }">
-        <span class="txt">{post.title}</span>
-      </a>
-    </li>
-  {/each}
+    {#each posts.slice(0, 50) as post, index}
+      <li title={`Published ${formatDate(post.pubDate)}`}>
+        <span class="line"
+          >{index + 1 === posts.length || index === 50 ? '└' : '├'}</span
+        >
+        <a href={`/blog/${slugify(post.title)}` || post.link}>
+          <span class="txt">{post.title}</span>
+        </a>
+      </li>
+    {/each}
   </ul>
-  </section>
+</section>
 
 <style lang="scss">
   @import '$src/styles/media-queries.scss';
@@ -67,23 +68,36 @@ export let accent = 'var(--accent)';
       @include tablet-down {
         border-left: 2px solid var(--dimmed-text);
         &:first-child {
-          border-image: linear-gradient(to bottom, transparent 30%, var(--dimmed-text) 30%) 100% 1;
+          border-image: linear-gradient(
+              to bottom,
+              transparent 30%,
+              var(--dimmed-text) 30%
+            )
+            100% 1;
           border-image-slice: 1;
         }
         &:last-child {
-          border-image: linear-gradient(to bottom, var(--dimmed-text) 40%, transparent 40%) 100% 1;
+          border-image: linear-gradient(
+              to bottom,
+              var(--dimmed-text) 40%,
+              transparent 40%
+            )
+            100% 1;
           border-image-slice: 1;
         }
         &::before {
-          content: "╴";
+          content: '╴';
         }
       }
       @include tablet-down {
-        .line, &.first { display: none; }
+        .line,
+        &.first {
+          display: none;
+        }
       }
 
-      
-      a, a .txt {
+      a,
+      a .txt {
         color: var(--foreground);
         text-decoration: none;
         position: relative;
@@ -97,7 +111,8 @@ export let accent = 'var(--accent)';
           opacity: 0;
           font-size: 1.8rem;
           transform: scale(1, 0.2) rotate(90deg);
-          transition: opacity 0.3s ease-out, left 0.3s ease-out, transform 0.15s ease-out;
+          transition: opacity 0.3s ease-out, left 0.3s ease-out,
+            transform 0.15s ease-out;
         }
       }
       .line {
@@ -105,14 +120,15 @@ export let accent = 'var(--accent)';
         font-size: 1.5rem;
       }
 
-      &:hover a .txt, a:focus .txt {
-          transform: translateX(1rem);
-          &::before {
-            opacity: 1;
-            left: -1.5rem;
-            transform: scale(1) rotate(0deg);
-          }
+      &:hover a .txt,
+      a:focus .txt {
+        transform: translateX(1rem);
+        &::before {
+          opacity: 1;
+          left: -1.5rem;
+          transform: scale(1) rotate(0deg);
         }
+      }
 
       &:hover:not(.first) {
         .line {

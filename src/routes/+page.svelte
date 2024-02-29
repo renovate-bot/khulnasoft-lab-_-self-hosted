@@ -1,5 +1,4 @@
 <script lang="ts">
-  
   import { onMount } from 'svelte';
   import { config } from '$src/store/BlogStore';
   import Loading from '$src/components/Loading.svelte';
@@ -17,8 +16,11 @@
   let showLoader = false;
 
   onMount(() => {
-    try { new D3Voronoi(); }
-    catch (e) { console.warn('D3Voronoi failed to load', e); }
+    try {
+      new D3Voronoi();
+    } catch (e) {
+      console.warn('D3Voronoi failed to load', e);
+    }
   });
 
   const userSocials = Object.keys(config.contact.socials);
@@ -42,14 +44,14 @@
 </script>
 
 <main class="homepage">
-  <div id="vonoroi"></div>
+  <div id="vonoroi" />
   <div class="hero">
     <Heading
       level="h1"
       commandStyle={false}
       blinkCursor={true}
       size="4rem"
-      color="var(--home-accent-background)">Alicia Sykes</Heading
+      color="var(--home-accent-background)">KhulnaSoft Lab</Heading
     >
     <div class="socials">
       {#each socialLinks as social}
@@ -99,7 +101,7 @@
   {/if}
 </main>
 
-<IndexComponent data={data} />
+<IndexComponent {data} />
 
 <style lang="scss">
   @import '$src/styles/media-queries.scss';

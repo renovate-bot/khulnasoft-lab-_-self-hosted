@@ -7,9 +7,8 @@
     formatTitle,
     putCommasInBigNum,
     getMonthYear,
-    calculateTimeAgo
+    calculateTimeAgo,
   } from './card-helpers';
-
 
   export let repo: Project;
 
@@ -20,11 +19,14 @@
     else if (newState === undefined) isScootched = !isScootched;
     else isScootched = !newState;
   };
-
 </script>
 
 <div
-  class="project-card {isScootched ? 'scootch' : repo.thumbnail ? 'fixed' : ''} {repo.featured ? 'featured' : ''}"
+  class="project-card {isScootched
+    ? 'scootch'
+    : repo.thumbnail
+    ? 'fixed'
+    : ''} {repo.featured ? 'featured' : ''}"
   on:mouseenter={() => scootch(true)}
   on:mouseleave={() => scootch(false)}
 >
@@ -245,20 +247,20 @@
       }
     }
     @include tablet-up {
-    &.scootch:not(.featured) {
-      height: 16rem;
-      .thumbnail {
-        height: 150px;
-      }
-      .repo-description {
-        -webkit-line-clamp: 2;
-        margin: 0;
-      }
-      .view-buttons {
-        display: none;
+      &.scootch:not(.featured) {
+        height: 16rem;
+        .thumbnail {
+          height: 150px;
+        }
+        .repo-description {
+          -webkit-line-clamp: 2;
+          margin: 0;
+        }
+        .view-buttons {
+          display: none;
+        }
       }
     }
-  }
     @include tablet-up {
       &.featured {
         height: 100%;

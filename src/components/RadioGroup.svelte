@@ -9,12 +9,14 @@
     label: string;
     selected: boolean;
   }[];
-  export let multiple: boolean = false;
+  export let multiple = false;
 
-  let selectedOptions: string[] = options.filter(option => option.selected).map(option => option.id);
+  let selectedOptions: string[] = options
+    .filter((option) => option.selected)
+    .map((option) => option.id);
 
   $: {
-    options = options.map(option => ({
+    options = options.map((option) => ({
       ...option,
       selected: selectedOptions.includes(option.id),
     }));
@@ -25,7 +27,7 @@
     if (multiple) {
       selectedOptions = !selected
         ? [...selectedOptions, id]
-        : selectedOptions.filter(optionId => optionId !== id);
+        : selectedOptions.filter((optionId) => optionId !== id);
     } else {
       selectedOptions = [id];
     }
@@ -38,26 +40,31 @@
     {#each options as option (option.id)}
       <div class="radio-item">
         {#if multiple}
-          <input 
-            type="checkbox" 
-            id={option.id} 
-            name={groupId} 
-            value={option.id} 
+          <input
+            type="checkbox"
+            id={option.id}
+            name={groupId}
+            value={option.id}
             bind:checked={option.selected}
             on:change={() => handleChange(option.id, option.selected)}
             class="hidden-radio"
           />
         {:else}
-          <input 
-            type="radio" 
-            id={option.id} 
-            name={groupId} 
-            value={option.id} 
-            bind:group={selectedOptions} 
+          <input
+            type="radio"
+            id={option.id}
+            name={groupId}
+            value={option.id}
+            bind:group={selectedOptions}
             class="hidden-radio"
           />
         {/if}
-        <label for={option.id} class:selected={option.selected} class:checkbox={multiple} class:radio={!multiple}>{option.label}</label>
+        <label
+          for={option.id}
+          class:selected={option.selected}
+          class:checkbox={multiple}
+          class:radio={!multiple}>{option.label}</label
+        >
       </div>
     {/each}
   </div>
@@ -69,7 +76,9 @@
     .radio-group {
       display: flex;
       gap: 0.5rem;
-      &.wrap { flex-wrap: wrap; }
+      &.wrap {
+        flex-wrap: wrap;
+      }
     }
     .radio-group-label {
       font-size: 0.8rem;
@@ -91,18 +100,18 @@
         background: var(--card-background);
 
         &.checkbox {
-          &::before{
+          &::before {
             content: '▢';
           }
-          &:hover:not(.selected)::before{
+          &:hover:not(.selected)::before {
             content: '▣';
           }
         }
         &.radio {
-          &::before{
+          &::before {
             content: '⃝';
           }
-          &:hover:not(.selected)::before{
+          &:hover:not(.selected)::before {
             content: '⏺';
           }
         }

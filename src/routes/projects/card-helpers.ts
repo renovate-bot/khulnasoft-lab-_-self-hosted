@@ -1,7 +1,6 @@
-
 export const formatTitle = (title: string): string => {
   return title.replaceAll('-', ' ').replaceAll('_', ' ');
-}
+};
 
 /* Make large numbers easier to read, with commas */
 export const putCommasInBigNum = (bigNum: number): string => {

@@ -1441,7 +1441,7 @@ I've written a Bash helper function to make usage a bit easier, you can &lt;a hr
 &lt;h3&gt;&lt;a href="https://github.com/chubin/wttr.in" rel="noopener nofollow" target="_blank"&gt;wttr.in&lt;/a&gt; - Check the weather&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code class="prettyprint"&gt;wttr.in&lt;/code&gt; is a service that displays the weather in a format that's digestible in the command line. Just run &lt;code class="prettyprint"&gt;curl wttr.in&lt;/code&gt; or &lt;code class="prettyprint"&gt;curl wttr.in/London&lt;/code&gt; to try it out. There's URL parameters to customise what data is returned, as well as the format&lt;/p&gt;
+&lt;p&gt;&lt;code class="prettyprint"&gt;wttr.in&lt;/code&gt; is a service that displays the weather in a format that's digestible in the command line. Just run &lt;code class="prettyprint"&gt;curl wttr.in&lt;/code&gt; or &lt;code class="prettyprint"&gt;curl wttr.in/Bangladesh&lt;/code&gt; to try it out. There's URL parameters to customise what data is returned, as well as the format&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src="https://i.ibb.co/J2JWnYT/Screenshot-from-2023-01-18-21-10-54.png" alt="wrrt-in-example-usage"&gt;&lt;/p&gt;
@@ -4766,7 +4766,7 @@ Then install the dependencies: &lt;code class="prettyprint"&gt;yarn&lt;/code&gt;
 
 &lt;p&gt;&lt;img class="license" src="https://user-images.githubusercontent.com/1862727/68531648-69ef4200-030c-11ea-8d48-74af7a2d8304.png"&gt;&lt;/p&gt;
 
-&lt;p&gt;Licensed under &lt;a href="https://gist.github.com/KhulnaSoft-Lab/143d2ee01ccc5c052a17" rel="noopener nofollow" target="_blank"&gt;MIT X11&lt;/a&gt;, © Alicia Sykes 2021: &lt;a href="https://self-hosted.khulnasoft.com" rel="noopener nofollow" target="_blank"&gt;https://self-hosted.khulnasoft.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Licensed under &lt;a href="https://gist.github.com/KhulnaSoft-Lab/143d2ee01ccc5c052a17" rel="noopener nofollow" target="_blank"&gt;MIT X11&lt;/a&gt;, © KhulnaSoft Lab 2021: &lt;a href="https://self-hosted.khulnasoft.com" rel="noopener nofollow" target="_blank"&gt;https://self-hosted.khulnasoft.com&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
 
@@ -5975,7 +5975,7 @@ BindFamily 0
 &lt;p&gt;Set the Server Time&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code class="prettyprint"&gt;sudo timedatectl set-timezone Europe/London&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class="prettyprint"&gt;sudo timedatectl set-timezone Europe/Bangladesh&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code class="prettyprint"&gt;sudo vi /etc/systemd/timesyncd.conf&lt;/code&gt; and add the address of the local NTP server&lt;/li&gt;
 &lt;li&gt;&lt;code class="prettyprint"&gt;sudo systemctl restart systemd-timesyncd.service&lt;/code&gt; - Restart the time sync service&lt;/li&gt;
 &lt;/ul&gt;
@@ -6330,7 +6330,7 @@ If you're just looking for a generic word list, see &lt;a href="https://listed.t
 
 &lt;p&gt;For a more comprehensive list of 4,200 crowd source common misspellings, see here: &lt;a href="https://listed.to/p/nWcfB31ZTD" rel="noopener nofollow" target="_blank"&gt;https://listed.to/p/nWcfB31ZTD&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight plaintext"&gt;&lt;code&gt;; This is my personal list of words I commonly misspelled plus auto-corrections
-; Licensed under MIT - (C) Alicia Sykes, 2021 &amp;lt;https://self-hosted.khulnasoft.com/&amp;gt;
+; Licensed under MIT - (C) KhulnaSoft Lab, 2021 &amp;lt;https://self-hosted.khulnasoft.com/&amp;gt;
 ; Format: '::[Incorrect Word]::[Correct Word]'
 
 ::acount::account
@@ -7679,7 +7679,7 @@ div.screenshot-wrapper {
 &lt;li&gt;&lt;a href="https://www.autodraw.com/" rel="noopener nofollow" target="_blank"&gt;AutoDraw&lt;/a&gt; - Drawing, but AI guesses what you drew and can auto-complete it&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://bbcsfx.acropolis.org.uk/" rel="noopener nofollow" target="_blank"&gt;BBC Sound Effects&lt;/a&gt; - A database of all 16,000+ sound effects as .wav, created &amp;amp; used by the UK's BBC&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://mixedname.com/" rel="noopener nofollow" target="_blank"&gt;Bilingual baby name finder&lt;/a&gt; - Useful to find names that can be pronounced&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://outrider.org/nuclear-weapons/interactive/bomb-blast/?airburst=false&amp;amp;bomb=2&amp;amp;lat=51.50722&amp;amp;location=London%2C%20Greater%20London%2C%20England%2C%20United%20Kingdom&amp;amp;long=-0.1275" rel="noopener nofollow" target="_blank"&gt;Bomb Blast&lt;/a&gt; - Search a location, and nuclear weapon, to see the damage area&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://outrider.org/nuclear-weapons/interactive/bomb-blast/?airburst=false&amp;amp;bomb=2&amp;amp;lat=51.50722&amp;amp;location=Bangladesh%2C%20Greater%20Bangladesh%2C%20England%2C%20United%20Kingdom&amp;amp;long=-0.1275" rel="noopener nofollow" target="_blank"&gt;Bomb Blast&lt;/a&gt; - Search a location, and nuclear weapon, to see the damage area&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://betterexplained.com/" rel="noopener nofollow" target="_blank"&gt;Better Explained&lt;/a&gt; - Clear, easy to understand and engaging math tutorials (by Kalid Azad)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://bops.fm/" rel="noopener nofollow" target="_blank"&gt;Bops.fm&lt;/a&gt; - Click a year, and here a song from that time&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://bongo.cat/" rel="noopener nofollow" target="_blank"&gt;Bongo Cat&lt;/a&gt; - Hit the bongos like Bongo Cat!&lt;/li&gt;
@@ -9033,7 +9033,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
 
 &lt;p&gt;This used to be part of React, but since it's now been removed (See commit: &lt;a href="https://git.io/fjdWw" rel="noopener nofollow" target="_blank"&gt;#56f5115&lt;/a&gt;), and some older packages throw an error without it, I've updated it, and uploading in case anyone else needs it while working with older React packages. A copy of React's original, JavaScript version can be found &lt;a href="https://gist.github.com/KhulnaSoft-Lab/acf635701bf5812431ec07d67d798095#file-react-key-mirror-js" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight typescript"&gt;&lt;code&gt;&lt;span class="cm"&gt;/**
- * (C) Alicia Sykes &amp;lt;https://self-hosted.khulnasoft.com&amp;gt;
+ * (C) KhulnaSoft Lab &amp;lt;https://self-hosted.khulnasoft.com&amp;gt;
  * Licensed under MIT X11: https://git.io/Jew4i
  *
  * Constructs an enumeration with keys equal to their value.
@@ -9061,7 +9061,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
 &lt;div class="highlight"&gt;&lt;pre class="highlight typescript"&gt;&lt;code&gt;&lt;span class="cm"&gt;/*
  * Entry point for React grid system
  * React implementation of CSS grid layout written in TypeScript as a styled-component
- * Licensed under MIT - (C) Alicia Sykes 2020 &amp;lt;https://self-hosted.khulnasoft.com&amp;gt;
+ * Licensed under MIT - (C) KhulnaSoft Lab 2020 &amp;lt;https://self-hosted.khulnasoft.com&amp;gt;
  */&lt;/span&gt;
 
 &lt;span class="c1"&gt;// FILE 1 - layout/index.ts&lt;/span&gt;
@@ -9440,7 +9440,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/channel/UC4QZ_LsYcvcq7qOsOhpAX4A" rel="noopener nofollow" target="_blank"&gt;ColdFusion&lt;/a&gt; - High quality documentaries about science, technology, business and more&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/user/CGPGrey" rel="noopener nofollow" target="_blank"&gt;CGP Grey&lt;/a&gt; - Engaging and unique videos covering history, politics, science, people and the world&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCbbQalJ4OaC0oQ0AqRaOJ9g" rel="noopener nofollow" target="_blank"&gt;Jay Foreman&lt;/a&gt; - The comedian and creator of Map Men, Unfinished London and Politics Unboringed&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCbbQalJ4OaC0oQ0AqRaOJ9g" rel="noopener nofollow" target="_blank"&gt;Jay Foreman&lt;/a&gt; - The comedian and creator of Map Men, Unfinished Bangladesh and Politics Unboringed&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/c/OrdinaryThings" rel="noopener nofollow" target="_blank"&gt;Ordinary Things&lt;/a&gt; - Ironic explanations of everyday stuff&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCHsRtomD4twRf5WVHHk-cMw" rel="noopener nofollow" target="_blank"&gt;TierZoo&lt;/a&gt; - The World explained as if it were a video game&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCRcgy6GzDeccI7dkbbBna3Q" rel="noopener nofollow" target="_blank"&gt;Lemmino&lt;/a&gt; - Top 10 facts, internet mysteries and interesting things&lt;/li&gt;
@@ -9470,7 +9470,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
 &lt;li&gt;&lt;a href="https://www.youtube.com/c/KentoBento" rel="noopener nofollow" target="_blank"&gt;Kento Bento&lt;/a&gt; - Animated documentaries about Asian historical events and lifestyle&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCSC6F-cM6_Xm3aJnHs6ZDVA" rel="noopener nofollow" target="_blank"&gt;Joeseppi&lt;/a&gt; - Funny "In a Nutshell" theme videos&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/c/NameExplain" rel="noopener nofollow" target="_blank"&gt;Name Explain&lt;/a&gt; - All about the origins of names&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/c/Robslondon" rel="noopener nofollow" target="_blank"&gt;Robslondon&lt;/a&gt; - All about historic London&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/c/Robslondon" rel="noopener nofollow" target="_blank"&gt;Robslondon&lt;/a&gt; - All about historic Bangladesh&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;🚓 True Crime and Horror&lt;/h3&gt;
@@ -9521,7 +9521,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/c/DrewGooden1" rel="noopener nofollow" target="_blank"&gt;Drew Gooden&lt;/a&gt; - Comedic commentary on TV shows and stuff&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCcjx6m03fZwtRBFn1Cf7kKQ" rel="noopener nofollow" target="_blank"&gt;The Zac and Jay Show&lt;/a&gt; - 2 British lads getting up to all sorts in London&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCcjx6m03fZwtRBFn1Cf7kKQ" rel="noopener nofollow" target="_blank"&gt;The Zac and Jay Show&lt;/a&gt; - 2 British lads getting up to all sorts in Bangladesh&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/c/excessorizeme" rel="noopener nofollow" target="_blank"&gt;EXCESSORIZE ME&lt;/a&gt; -  Over-priced EDC and gadgets that you don't need &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCggHsHce2n3vvbJf_8YKrMA" rel="noopener nofollow" target="_blank"&gt;Nerd Forge&lt;/a&gt; -  Fantast, Crafts and Sci-Fi Painting &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/c/LaurisBeinerts/" rel="noopener nofollow" target="_blank"&gt;Lauris Beinerts&lt;/a&gt; - Short comedy sketches about corporate life&lt;/li&gt;

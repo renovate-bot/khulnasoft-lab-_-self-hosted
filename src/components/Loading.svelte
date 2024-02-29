@@ -2,8 +2,8 @@
   import { onDestroy } from 'svelte';
   import LinkButton from '$src/components/LinkButton.svelte';
 
-  export let title: string = ''; // An optional custom title to show
-  export let message: string = ''; // An optional custom loading message to show
+  export let title = ''; // An optional custom title to show
+  export let message = ''; // An optional custom loading message to show
   export let onlyShowLoading = false; // If set to true, won't show warning if taking too long
   export let hideHomeButton = false; // If set to true, won't show home button if something goes wrong
 
@@ -13,7 +13,7 @@
     'bloody-ages',
     'probably-broken',
   ] as const;
-  type TimeSpan = typeof times[number];
+  type TimeSpan = (typeof times)[number];
 
   let waitingFor: TimeSpan = 'just-now'; // Records how long the user has been waiting
 

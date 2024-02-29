@@ -26,7 +26,11 @@
     c: { name: 'C', color: 'A8B9CC', icon: 'c' },
     'c++': { name: 'C++', color: '00599C', icon: 'cplusplus' },
     'c#': { name: 'C#', color: '239120', icon: 'csharp' },
-    coffeescript: { name: 'CoffeeScript', color: '2F2625', icon: 'coffeescript' },
+    coffeescript: {
+      name: 'CoffeeScript',
+      color: '2F2625',
+      icon: 'coffeescript',
+    },
     crystal: { name: 'crystal', color: '000000', icon: 'crystal' },
     css: { name: 'CSS', color: '563D7C', icon: 'css3' },
     config: { name: 'Config', color: 'EF1970', icon: 'haveibeenpwned' },
@@ -75,7 +79,11 @@
     // DevOps
     ansible: { name: 'Ansible', color: 'EE0000', icon: 'ansible' },
     kubernetes: { name: 'Kubernetes', color: '326CE5', icon: 'kubernetes' },
-    githubactions: { name: 'GitHub Actions', color: '2088FF', icon: 'githubactions' },
+    githubactions: {
+      name: 'GitHub Actions',
+      color: '2088FF',
+      icon: 'githubactions',
+    },
     prometheus: { name: 'Prometheus', color: 'E6522C', icon: 'prometheus' },
     grafana: { name: 'Grafana', color: 'F46800', icon: 'grafana' },
 
@@ -98,7 +106,11 @@
     // Testing
     jest: { name: 'Jest', color: 'C21325', icon: 'jest' },
     puppeteer: { name: 'Puppeteer', color: '40B5A4', icon: 'puppeteer' },
-    enzyme: { name: 'Testing Library', color: 'E33332', icon: 'testinglibrary' },
+    enzyme: {
+      name: 'Testing Library',
+      color: 'E33332',
+      icon: 'testinglibrary',
+    },
     cypress: { name: 'Cypress', color: '17202C', icon: 'cypress' },
     storybook: { name: 'Storybook', color: 'FF4785', icon: 'storybook' },
     junit: { name: 'JUnit', color: '25A162', icon: 'junit5' },
@@ -111,7 +123,11 @@
     hackthebox: { name: 'Hack The Box', color: '9FEF00', icon: 'hackthebox' },
 
     // Servers
-    apachetomcat: { name: 'Apache Tomcat', color: 'F8DC75', icon: 'apachetomcat' },
+    apachetomcat: {
+      name: 'Apache Tomcat',
+      color: 'F8DC75',
+      icon: 'apachetomcat',
+    },
     nginx: { name: 'Nginx', color: '269539', icon: 'nginx' },
     apache: { name: 'Apache', color: 'D22128', icon: 'apache' },
     caddy: { name: 'Caddy', color: '0D597F', icon: 'caddy' },
@@ -148,15 +164,20 @@
   // Check if hex code of badge is very pale, so we can use black icon instead
   const getIconColor = (badgeColor: string) => {
     const hex = badgeColor.replace('#', '') || '000000';
-    const [r, g, b] = hex.match(/.{2}/g)?.map(x => parseInt(x, 16)) || [255, 255, 255];
+    const [r, g, b] = hex.match(/.{2}/g)?.map((x) => parseInt(x, 16)) || [
+      255, 255, 255,
+    ];
     const brightness = (r * 299 + g * 587 + b * 114) / 1000;
     return brightness > 170 ? '000000' : 'FFFFFF';
-  }
+  };
 
   // Get the language info (if present) for the languages passed as a prop
   const getLangAttributes = (lang: string): LanguageAttributes | null => {
-    const defaultConfig = {name: lang, color: '000000', icon: '' };
-    return badgeConfigs[lang?.toLocaleLowerCase().replaceAll(' ', '')] || defaultConfig;
+    const defaultConfig = { name: lang, color: '000000', icon: '' };
+    return (
+      badgeConfigs[lang?.toLocaleLowerCase().replaceAll(' ', '')] ||
+      defaultConfig
+    );
   };
 
   // Make the URL to the language badge, using Shields.io
@@ -164,11 +185,15 @@
     if (!attributes) return null;
     const { name, color, icon } = attributes;
     const badgeEndpoint = 'https://img.shields.io/static/v1';
-    return `${badgeEndpoint}?`
-      + (!iconOnly ? `label=&message=${encodeURIComponent(name)}` : 'label=&message= ')
-      + `&color=${color}`
-      + `&logo=${icon}`
-      + `&logoColor=${getIconColor(color)}`;
+    return (
+      `${badgeEndpoint}?` +
+      (!iconOnly
+        ? `label=&message=${encodeURIComponent(name)}`
+        : 'label=&message= ') +
+      `&color=${color}` +
+      `&logo=${icon}` +
+      `&logoColor=${getIconColor(color)}`
+    );
   };
 
   // Make both badge URL and language info available to the component (and reactive)
@@ -189,12 +214,19 @@
     <div
       class="language"
       style:background="#{langAttributes?.color}"
-      style:color="#{getIconColor(langAttributes?.color)}">
-      <img height="16" width="16" alt="l" src="https://cdn.simpleicons.org/{langAttributes.icon}/{getIconColor(langAttributes?.color)}" />
+      style:color="#{getIconColor(langAttributes?.color)}"
+    >
+      <img
+        height="16"
+        width="16"
+        alt="l"
+        src="https://cdn.simpleicons.org/{langAttributes.icon}/{getIconColor(
+          langAttributes?.color
+        )}"
+      />
       {langAttributes.name}
     </div>
   {/if}
-
 </div>
 
 <style lang="scss">

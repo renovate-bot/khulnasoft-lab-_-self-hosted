@@ -14,7 +14,7 @@ export const SupportedSocials: readonly string[] = [
 ] as const;
 
 export interface SocialNetwork {
-  name: typeof SupportedSocials[number];
+  name: (typeof SupportedSocials)[number];
   icon: string;
   tone: string;
   link: string;
@@ -32,7 +32,7 @@ export interface UserSocial extends SocialNetwork {
 }
 
 export type Usernames = {
-  [key in typeof SupportedSocials[number]]: string;
+  [key in (typeof SupportedSocials)[number]]: string;
 };
 
 export interface SocialMetric {

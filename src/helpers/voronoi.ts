@@ -7,15 +7,24 @@ const { Delaunay, Voronoi, Polygon } = d3Delaunay;
  * Class for creating a reactive Voronoi diagram, using D3.js + D3-Delaunay
  */
 export default class D3Voronoi {
-
   /* Defining the attributes */
   private target: d3.Selection<HTMLElement, unknown, null, undefined>;
   private svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>;
   private width: number;
   private height: number;
   private sites: [number, number][];
-  private polygon: d3.Selection<d3.BaseType, typeof Polygon, SVGGElement, unknown>;
-  private site: d3.Selection<SVGCircleElement, [number, number], SVGGElement, unknown>;
+  private polygon: d3.Selection<
+    d3.BaseType,
+    typeof Polygon,
+    SVGGElement,
+    unknown
+  >;
+  private site: d3.Selection<
+    SVGCircleElement,
+    [number, number],
+    SVGGElement,
+    unknown
+  >;
   private delaunay: typeof Delaunay<[number, number]>;
   private voronoi: typeof Voronoi<[number, number]>;
 
@@ -39,24 +48,36 @@ export default class D3Voronoi {
     // this.mouseLeaveEvents();
 
     this.sites = d3.range(300).map(() => {
-      return [Math.random() * this.width, Math.random() * this.height] as [number, number];
+      return [Math.random() * this.width, Math.random() * this.height] as [
+        number,
+        number
+      ];
     });
 
     this.delaunay = Delaunay.from(this.sites);
-    this.voronoi = this.delaunay.voronoi([-1, -1, this.width + 1, this.height + 1]);
+    this.voronoi = this.delaunay.voronoi([
+      -1,
+      -1,
+      this.width + 1,
+      this.height + 1,
+    ]);
 
-    this.polygon = this.svg.append('g')
+    this.polygon = this.svg
+      .append('g')
       .attr('class', 'polygons')
       .selectAll('path')
       .data(this.voronoi.cellPolygons())
-      .enter().append('path')
+      .enter()
+      .append('path')
       .call(this.redrawPolygon.bind(this));
 
-    this.site = this.svg.append('g')
+    this.site = this.svg
+      .append('g')
       .attr('class', 'sites')
       .selectAll('circle')
       .data(this.sites)
-      .enter().append('circle')
+      .enter()
+      .append('circle')
       .attr('r', 2.5)
       .call(this.redrawSite.bind(this));
 
@@ -71,10 +92,21 @@ export default class D3Voronoi {
 
   private redraw() {
     this.delaunay = Delaunay.from(this.sites);
-    this.voronoi = this.delaunay.voronoi([-1, -1, this.width + 1, this.height + 1]);
+    this.voronoi = this.delaunay.voronoi([
+      -1,
+      -1,
+      this.width + 1,
+      this.height + 1,
+    ]);
 
-    this.polygon = this.polygon.data(this.voronoi.cellPolygons()).join('path').call(this.redrawPolygon.bind(this));
-    this.site = this.site.data(this.sites).join('circle').call(this.redrawSite.bind(this));
+    this.polygon = this.polygon
+      .data(this.voronoi.cellPolygons())
+      .join('path')
+      .call(this.redrawPolygon.bind(this));
+    this.site = this.site
+      .data(this.sites)
+      .join('circle')
+      .call(this.redrawSite.bind(this));
   }
 
   // private redrawPolygon(polygon: d3.Selection<d3.BaseType, typeof Polygon, SVGGElement, unknown>) {
@@ -83,9 +115,11 @@ export default class D3Voronoi {
   //     .attr('class', (d: typeof Polygon, i: number) => 'v-' + i % 9);
   // }
 
-  private redrawPolygon(polygon: d3.Selection<d3.BaseType, typeof Polygon, SVGGElement, unknown>) {
+  private redrawPolygon(
+    polygon: d3.Selection<d3.BaseType, typeof Polygon, SVGGElement, unknown>
+  ) {
     polygon
-      .attr('d', (d: typeof Polygon) => d ? 'M' + d.join('L') + 'Z' : null)
+      .attr('d', (d: typeof Polygon) => (d ? 'M' + d.join('L') + 'Z' : null))
       .attr('class', (d: typeof Polygon, i: number) => {
         const centroid = d3.polygonCentroid(d);
         const relativeHeight = centroid[1] / this.height;
@@ -95,7 +129,9 @@ export default class D3Voronoi {
       });
   }
 
-  private redrawSite(site: d3.Selection<SVGCircleElement, [number, number], SVGGElement, unknown>) {
+  private redrawSite(
+    site: d3.Selection<SVGCircleElement, [number, number], SVGGElement, unknown>
+  ) {
     site
       .attr('cx', (d: [number, number]) => d[0])
       .attr('cy', (d: [number, number]) => d[1]);

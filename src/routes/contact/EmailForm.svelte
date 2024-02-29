@@ -6,9 +6,9 @@
   import config from '$src/helpers/config';
 
   // Email form values
-  let name: string = '';
-  let email: string = '';
-  let message: string = '';
+  let name = '';
+  let email = '';
+  let message = '';
 
   // Mail send status
   type MessageStatus = 'pending' | 'sending' | 'success' | 'error';

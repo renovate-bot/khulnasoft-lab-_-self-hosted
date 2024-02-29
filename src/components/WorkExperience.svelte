@@ -4,26 +4,30 @@
   import LangBadge from '$src/components/LangBadge.svelte';
   import Icon from '$src/components/Icon.svelte';
 
-  const { workExperience } = config; 
-
-  </script>
+  const { workExperience } = config;
+</script>
 
 <Heading level="h2" color="var(--foreground)">Experience</Heading>
 
 {#each workExperience as job}
   <div class="experience">
-    <div class="line"></div>
+    <div class="line" />
     <img class="logo" src={job.companyLogo} alt={job.company} />
     <div class="info">
       <h5 class="title">
         <span class="position">{job.jobTitle}</span>
         <span class="at">@</span>
-        <a class="company" href={job.companyUrl} target="_blank" rel="noreferrer">{job.company}</a>
+        <a
+          class="company"
+          href={job.companyUrl}
+          target="_blank"
+          rel="noreferrer">{job.company}</a
+        >
       </h5>
       <p class="date">{job.datesWorked}</p>
       <p class="description">{job.responsibilities || ''}</p>
       {#if job.projects && job.projects.length > 0}
-        <h6>{job.projectType || 'Projects' }</h6>
+        <h6>{job.projectType || 'Projects'}</h6>
         <div class="projects">
           {#each job.projects as project}
             <div class="sub-project">

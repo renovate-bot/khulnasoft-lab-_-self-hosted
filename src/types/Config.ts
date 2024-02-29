@@ -7,7 +7,7 @@ export type Theme = 'dark' | 'light' | 'system' | 'callisto';
 export interface TechStackItem {
   language: string;
   projects: string[];
-};
+}
 
 export interface SiteConfig {
   title: string; // Website title / name
@@ -91,13 +91,13 @@ export interface SiteConfig {
     picture: string;
   };
   techStack: {
-    [key: string]: TechStackItem[],
+    [key: string]: TechStackItem[];
   };
   techStackExtras: {
-    [key: string]: string[],
+    [key: string]: string[];
   };
   plausible?: {
     scriptSrc: string;
     domain: string;
-  },
+  };
 }

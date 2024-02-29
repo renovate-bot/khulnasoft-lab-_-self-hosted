@@ -1,11 +1,16 @@
 import type { SiteConfig } from '$src/types/Config';
 
 const config: SiteConfig = {
-  title: 'Alicia Sykes',
+  title: 'KhulnaSoft Lab',
   description: '',
   source: 'https://github.com/khulnasoft-lab/self-hosted',
   baseUrl: 'https://as93.net',
-  initialFeeds: [{ label: 'Notes', url: 'https://raw.githubusercontent.com/KhulnaSoft-Lab/feeds/main/blog.atom' }],
+  initialFeeds: [
+    {
+      label: 'Notes',
+      url: 'https://raw.githubusercontent.com/KhulnaSoft-Lab/feeds/main/blog.atom',
+    },
+  ],
   additionalFeeds: [
     { label: 'Notes', url: 'https://notes.self-hosted.khulnasoft.com/feed' },
     {
@@ -67,7 +72,7 @@ const config: SiteConfig = {
     },
   ],
   footerInfo: {
-    author: 'Alicia Sykes',
+    author: 'KhulnaSoft Lab',
     authorSite: 'https://github.com/khulnasoft-lab',
     license: 'MIT',
     licenseLink: '',
@@ -149,10 +154,18 @@ const config: SiteConfig = {
       datesWorked: 'August 2022 - Present',
       projectType: 'Clients',
       projects: [
-        { name: 'Frasers Group', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
-        { name: 'Lloyds Bank', logo: 'https://i.ibb.co/GCSDPCq/Lloyds-bank.jpg', description: '', },
+        {
+          name: 'Frasers Group',
+          logo: 'https://i.ibb.co/sQcvxmG/Frasers.png',
+          description: '',
+        },
+        {
+          name: 'Lloyds Bank',
+          logo: 'https://i.ibb.co/GCSDPCq/Lloyds-bank.jpg',
+          description: '',
+        },
       ],
-      technologies: [ 'TypeScript', 'React Native', 'Azure' ],
+      technologies: ['TypeScript', 'React Native', 'Azure'],
     },
     {
       company: 'Galaxy',
@@ -160,8 +173,9 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/fX2rF84/galaxy-digital.png',
       jobTitle: 'VP Frontend Engineer',
       datesWorked: 'Jan 2021 - July 2022',
-      responsibilities: 'Worked on real-time React-based Web3 trading application',
-      technologies: [ 'React', 'StoryBook', 'Cypress', 'web3js',],
+      responsibilities:
+        'Worked on real-time React-based Web3 trading application',
+      technologies: ['React', 'StoryBook', 'Cypress', 'web3js'],
     },
     {
       company: 'Freelance',
@@ -172,13 +186,33 @@ const config: SiteConfig = {
       responsibilities: '',
       projectType: 'Projects',
       projects: [
-        { name: 'Futr.AI', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
-        { name: 'Shell', logo: 'https://i.ibb.co/7r1K9cb/Shell.png', description: '', },
-        { name: 'Shell Recharge', logo: 'https://i.ibb.co/BBdP2Wh/Shell-recharge.jpg', description: ''  },
-        { name: 'Machine Max', logo: 'https://i.ibb.co/XzXTKWF/machine-max.png', description: '', },
-        { name: 'Ctemplar', logo: 'https://i.ibb.co/2Sg6G3s/Ctemplar.png', description: '', },
+        {
+          name: 'Futr.AI',
+          logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png',
+          description: '',
+        },
+        {
+          name: 'Shell',
+          logo: 'https://i.ibb.co/7r1K9cb/Shell.png',
+          description: '',
+        },
+        {
+          name: 'Shell Recharge',
+          logo: 'https://i.ibb.co/BBdP2Wh/Shell-recharge.jpg',
+          description: '',
+        },
+        {
+          name: 'Machine Max',
+          logo: 'https://i.ibb.co/XzXTKWF/machine-max.png',
+          description: '',
+        },
+        {
+          name: 'Ctemplar',
+          logo: 'https://i.ibb.co/2Sg6G3s/Ctemplar.png',
+          description: '',
+        },
       ],
-      technologies: [ 'React', 'React Native', 'TypeScript', 'GraphQL', 'GCP' ],
+      technologies: ['React', 'React Native', 'TypeScript', 'GraphQL', 'GCP'],
     },
     {
       company: 'Accenture',
@@ -186,20 +220,45 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/kcCKDF1/accenture.png',
       jobTitle: 'Software Developer',
       datesWorked: 'June 2014 - February 2019',
-      responsibilities: ''
-        + 'After joining as an associate, I had the opportunity to work on a range of exciting client projects, '
-        + 'each with their own challenges, his helped me to develop my skills and knowledge in a variety of areas. '
-        + 'Over time I worked my way up to a senior role, where I could actively deliver high quality solutions to clients.',
-        projectType: 'Clients',
-        projects: [
-        { name: 'E.ON', logo: 'https://i.ibb.co/4PcVN4B/Eon.png', description: '', },
-        { name: 'B&Q', logo: 'https://i.ibb.co/F79xSDK/Bandq.jpg', description: '', },
-        { name: 'Boots', logo: 'https://i.ibb.co/SnPtC8t/Boots.jpg', description: '', },
-        { name: 'TK Maxx', logo: 'https://i.ibb.co/MBkQVs1/tkmaxx.jpg', description: '', },
-        { name: 'Vodafone', logo: 'https://i.ibb.co/Zh1SwbR/Vodafone.png', description: '', },
-        { name: 'UKI Innovation Center', logo: 'https://i.ibb.co/1JX4Q9Y/Accenture-innovation.jpg', description: '', },
+      responsibilities:
+        '' +
+        'After joining as an associate, I had the opportunity to work on a range of exciting client projects, ' +
+        'each with their own challenges, his helped me to develop my skills and knowledge in a variety of areas. ' +
+        'Over time I worked my way up to a senior role, where I could actively deliver high quality solutions to clients.',
+      projectType: 'Clients',
+      projects: [
+        {
+          name: 'E.ON',
+          logo: 'https://i.ibb.co/4PcVN4B/Eon.png',
+          description: '',
+        },
+        {
+          name: 'B&Q',
+          logo: 'https://i.ibb.co/F79xSDK/Bandq.jpg',
+          description: '',
+        },
+        {
+          name: 'Boots',
+          logo: 'https://i.ibb.co/SnPtC8t/Boots.jpg',
+          description: '',
+        },
+        {
+          name: 'TK Maxx',
+          logo: 'https://i.ibb.co/MBkQVs1/tkmaxx.jpg',
+          description: '',
+        },
+        {
+          name: 'Vodafone',
+          logo: 'https://i.ibb.co/Zh1SwbR/Vodafone.png',
+          description: '',
+        },
+        {
+          name: 'UKI Innovation Center',
+          logo: 'https://i.ibb.co/1JX4Q9Y/Accenture-innovation.jpg',
+          description: '',
+        },
       ],
-      technologies: [ 'C#', 'Angular', 'Node', 'AWS' ],
+      technologies: ['C#', 'Angular', 'Node', 'AWS'],
     },
     {
       company: 'University of Oxford',
@@ -207,14 +266,19 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/QYmLPTX/oxford-uni.jpg',
       jobTitle: 'Intern',
       datesWorked: 'June 2013 - September 2013',
-      responsibilities: 'Worked on developing a Java application which would calculate the most '
-        + 'effective mg of antimalarial drug, per kg or patient body weight, to prevent vaccine resistance building up. '
-        + 'Involved dealing with millions of patient records, which were often in varying formats and units.',
-        projectType: 'Projects',
-        projects: [
-        { name: 'WWARN', logo: 'https://i.ibb.co/1R657nh/Wwarn.jpg', description: '', },
+      responsibilities:
+        'Worked on developing a Java application which would calculate the most ' +
+        'effective mg of antimalarial drug, per kg or patient body weight, to prevent vaccine resistance building up. ' +
+        'Involved dealing with millions of patient records, which were often in varying formats and units.',
+      projectType: 'Projects',
+      projects: [
+        {
+          name: 'WWARN',
+          logo: 'https://i.ibb.co/1R657nh/Wwarn.jpg',
+          description: '',
+        },
       ],
-      technologies: [ 'Java', 'apachetomcat', 'junit', 'gradle' ],
+      technologies: ['Java', 'apachetomcat', 'junit', 'gradle'],
     },
     {
       company: 'British Army',
@@ -225,9 +289,21 @@ const config: SiteConfig = {
       responsibilities: '',
       projectType: 'Regiments',
       projects: [
-        { name: 'Signals', logo: 'https://i.ibb.co/F5mhzkr/Signals.png', description: '', },
-        { name: 'Oxford UOTC', logo: 'https://i.ibb.co/ZMH1TWq/ouotc.jpg', description: '', },
-        { name: 'Intelligence Corps', logo: 'https://i.ibb.co/svn2XLq/mi.jpg', description: '', },
+        {
+          name: 'Signals',
+          logo: 'https://i.ibb.co/F5mhzkr/Signals.png',
+          description: '',
+        },
+        {
+          name: 'Oxford UOTC',
+          logo: 'https://i.ibb.co/ZMH1TWq/ouotc.jpg',
+          description: '',
+        },
+        {
+          name: 'Intelligence Corps',
+          logo: 'https://i.ibb.co/svn2XLq/mi.jpg',
+          description: '',
+        },
       ],
     },
   ],
@@ -238,20 +314,24 @@ const config: SiteConfig = {
     },
     {
       name: 'self-hosted.khulnasoft.com',
-      thumbnail: 'https://repository-images.githubusercontent.com/165275206/a5fc1f00-f206-11e9-9f21-6e5f696368e7',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/165275206/a5fc1f00-f206-11e9-9f21-6e5f696368e7',
     },
     {
       name: 'all-the-countries',
-      thumbnail: 'https://repository-images.githubusercontent.com/331389984/ab3f8a8b-a3bc-493c-9f0c-b119ec1575af',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/331389984/ab3f8a8b-a3bc-493c-9f0c-b119ec1575af',
     },
     {
       name: 'anti-theft-charge',
-      thumbnail: 'https://i.ibb.co/LZfDXR9/Screenshot-from-2023-10-29-23-51-27.png',
+      thumbnail:
+        'https://i.ibb.co/LZfDXR9/Screenshot-from-2023-10-29-23-51-27.png',
     },
     {
       name: 'awesome-privacy',
       language: 'markdown',
-      thumbnail: 'https://repository-images.githubusercontent.com/512269935/6b38d78e-6e4d-484e-bbc8-e0dd81c97e0a',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/512269935/6b38d78e-6e4d-484e-bbc8-e0dd81c97e0a',
     },
     {
       name: 'brewfile',
@@ -259,7 +339,8 @@ const config: SiteConfig = {
     },
     {
       name: 'bug-bounties',
-      thumbnail: 'https://raw.githubusercontent.com/KhulnaSoft-Lab/bug-bounties/main/web/public/banner.png',
+      thumbnail:
+        'https://raw.githubusercontent.com/KhulnaSoft-Lab/bug-bounties/main/web/public/banner.png',
     },
     {
       name: 'cheat-code',
@@ -267,13 +348,15 @@ const config: SiteConfig = {
     },
     {
       name: 'cso',
-      thumbnail: 'https://github.com/KhulnaSoft-Lab/cso/blob/HEAD/public/banner.png?raw=true',
+      thumbnail:
+        'https://github.com/KhulnaSoft-Lab/cso/blob/HEAD/public/banner.png?raw=true',
       language: 'Solid',
     },
     {
       name: 'dashy',
       featured: true,
-      thumbnail: 'https://repository-images.githubusercontent.com/343078060/82f850a2-b1af-4e9f-9245-c92700d74856',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/343078060/82f850a2-b1af-4e9f-9245-c92700d74856',
     },
     {
       name: 'docker-tcpdump',
@@ -281,7 +364,8 @@ const config: SiteConfig = {
     },
     {
       name: 'dotfiles',
-      thumbnail: 'https://i.ibb.co/YyrcjsH/Screenshot-from-2023-12-10-18-19-26.png',
+      thumbnail:
+        'https://i.ibb.co/YyrcjsH/Screenshot-from-2023-12-10-18-19-26.png',
     },
     {
       name: 'email-comparison',
@@ -289,7 +373,8 @@ const config: SiteConfig = {
     },
     {
       name: 'espanso-config',
-      thumbnail: 'https://repository-images.githubusercontent.com/362820466/b1ef9380-a909-11eb-9d34-2aaf94ed5d95',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/362820466/b1ef9380-a909-11eb-9d34-2aaf94ed5d95',
     },
     {
       name: 'git-into-open-source',
@@ -297,7 +382,8 @@ const config: SiteConfig = {
     },
     {
       name: 'happy-app',
-      thumbnail: 'https://repository-images.githubusercontent.com/94193652/5880b180-f208-11e9-9ab5-9f4b86f46017',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/94193652/5880b180-f208-11e9-9ab5-9f4b86f46017',
     },
     {
       name: 'hasami-shogi',
@@ -306,11 +392,13 @@ const config: SiteConfig = {
     {
       name: 'khulnasoft-lab',
       language: 'markdown',
-      thumbnail: 'https://i.ibb.co/TkqZmZ9/Screenshot-from-2023-10-29-23-48-30.png',
+      thumbnail:
+        'https://i.ibb.co/TkqZmZ9/Screenshot-from-2023-10-29-23-48-30.png',
     },
     {
       name: 'minesweper',
-      thumbnail: 'https://repository-images.githubusercontent.com/19034001/6fff26ca-21ea-4381-bf66-8ceb67bd047a',
+      thumbnail:
+        'https://repository-images.githubusercontent.com/19034001/6fff26ca-21ea-4381-bf66-8ceb67bd047a',
     },
     {
       name: 'minimal-terminal-prompt',
@@ -322,7 +410,8 @@ const config: SiteConfig = {
     },
     {
       name: 'OLD_AdGuardian-Term',
-      thumbnail: 'https://i.ibb.co/BykbdjF/Screenshot-from-2023-06-03-22-57-07.png',
+      thumbnail:
+        'https://i.ibb.co/BykbdjF/Screenshot-from-2023-06-03-22-57-07.png',
     },
     {
       name: 'personal-security-checklist',
@@ -355,7 +444,8 @@ const config: SiteConfig = {
     },
     {
       name: 'who-dat',
-      thumbnail: 'https://github.com/KhulnaSoft-Lab/who-dat/blob/main/public/who-dat.png?raw=true',
+      thumbnail:
+        'https://github.com/KhulnaSoft-Lab/who-dat/blob/main/public/who-dat.png?raw=true',
     },
   ],
   postComplimentaryData: [
@@ -418,7 +508,7 @@ const config: SiteConfig = {
     { postRef: '', thumbnail: '' },
   ],
   contact: {
-    name: 'Alicia Sykes',
+    name: 'KhulnaSoft Lab',
     email: 'alicia@omg.lol',
     website: 'https://self-hosted.khulnasoft.com',
     socials: {
@@ -444,7 +534,8 @@ const config: SiteConfig = {
       user_id: 'user_K6F041q1dQvz8SJLSOZCR',
       template_params: {},
     },
-    pgpKeyLink: 'https://keybase.io/aliciasykes/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
+    pgpKeyLink:
+      'https://keybase.io/aliciasykes/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
     pgpPublicKey: `-----BEGIN PGP PUBLIC KEY BLOCK-----
       mQENBFqbwpsBCACxoSZKSkr6zPUSVijbeFV9c7KphqXJxzJqKlWQbMOFL+rj52+Q
       F/wy16+Jze4seOGUNA9OiOcpM/YhSQoeFOBPdj5hOc9IXOTx86bhYi3+84D9o1cW
@@ -487,30 +578,20 @@ const config: SiteConfig = {
   about: {
     intro: 'Just your average dev...',
     bio: [
-      "I'm Alicia, a London-based software engineer.",
+      'KhulnaSoft, a premier software company based in Bangladesh, leads the industry with over a decade of experience in delivering top-tier professional services and cutting-edge security solutions.',
 
-      `I have a particular interest in privacy-respecting software, as well as security.
-      I've carried out a few audits, and authored the initial versions of
-      <a href="https://github.com/KhulnaSoft-Lab/personal-security-checklist">Personal Security Checklist</a>
-      and <a href="https://github.com/KhulnaSoft-Lab/awesome-privacy">Awesome Privacy</a>.`,
+      `Our passion lies in developing privacy-respecting software and implementing robust security measures. We have conducted numerous security audits and are the proud creators of the acclaimed <a href="https://github.com/KhulnaSoft-Lab/personal-security-checklist">Personal Security Checklist</a> and <a href="https://github.com/KhulnaSoft-Lab/awesome-privacy">Awesome Privacy</a>.`,
 
-      `I enjoy going to (<a href="https://notes.self-hosted.khulnasoft.com/p/0s5s3uOtKj">and sometimes winning!</a>) hackathons.
-      And if you're London-based, you'll probably have bumped into me at a tech meetup.`,
+      `We actively participate in hackathons, where our expertise shines in crafting innovative solutions. Our presence is felt at tech meetups across Bangladesh, where we engage with and contribute to the vibrant tech community.`,
 
-      `I love Linux, and (imo) have a neat
-      <a href="https://github.com/khulnasoft-lab/dotfiles">dotfiles setup</a> which I'm always tweaking.
-      And I have a small homelab, that I'm using to learn more about system administration,
-      and host my own services to (attempt to) escape big tech.
-      I made <a href="https://github.com/KhulnaSoft-Lab/dashy">dashboard app</a> for it.
-      `,
+      `With a strong affinity for Linux, we continually refine our <a href="https://github.com/khulnasoft-lab/dotfiles">dotfiles setup</a> and manage a small homelab. Through self-hosting and system administration, we strive to create decentralized alternatives and escape the grip of big tech. Our <a href="https://github.com/KhulnaSoft-Lab/dashy">dashboard app</a> is a testament to this pursuit.`,
 
-      `For work, I'm a principal software engineer at <a href="https://and.digital/">AND.Digital</a>,
-      where I work across various client projects, help to upskill and mentor junior and mid-level
-      developers and ensure that the code we're delivering is the best it can be.`,
+      `Professionally, we hold key roles as principal software engineers at <a href="https://and.digital/">AND.Digital</a>. Here, we contribute to various client projects, mentor junior and mid-level developers, and ensure the delivery of top-notch code.`,
 
-      `Away from the keyboard, I like sports, hanging out with friends, and going to Church.`,
+      `Beyond the confines of coding, we enjoy sports, spending time with friends, and participating in community activities such as attending Church.`,
     ],
-    picture: 'https://i.ibb.co/svxHFMD/alicia-sykes-3.jpg',
+    picture:
+      'https://avatars.githubusercontent.com/u/139280766?s=400&u=ffa144f17a87437516075658e6da4c734cc76e09&v=4',
   },
   techStack: {
     backend: [
@@ -524,25 +605,43 @@ const config: SiteConfig = {
       },
       {
         language: 'Node',
-        projects: ['twitter-sentiment-visualisation', 'quick-example-of-testing-in-nodejs'],
+        projects: [
+          'twitter-sentiment-visualisation',
+          'quick-example-of-testing-in-nodejs',
+        ],
       },
       {
         language: 'Python',
-        projects: ['portainer-templates', 'gh-trending-no-cors', 'tfl-lift-availability-dash', 'pax'],
+        projects: [
+          'portainer-templates',
+          'gh-trending-no-cors',
+          'tfl-lift-availability-dash',
+          'pax',
+        ],
       },
       {
         language: 'Java',
-        projects: ['Minesweper', 'AlternativeVoteSystem', 'TuneSender', 'TreasureHunt'],
+        projects: [
+          'Minesweper',
+          'AlternativeVoteSystem',
+          'TuneSender',
+          'TreasureHunt',
+        ],
       },
       {
         language: 'PHP',
-        projects: [ 'revision-quizzes', 'intern-magnet', 'usermonkey' ],
+        projects: ['revision-quizzes', 'intern-magnet', 'usermonkey'],
       },
     ],
     frontend: [
       {
         language: 'Vue',
-        projects: ['dashy', 'all-the-countries', 'alicia-sykes-website', 'tfl-lift-availability-dash'],
+        projects: [
+          'dashy',
+          'all-the-countries',
+          'alicia-sykes-website',
+          'tfl-lift-availability-dash',
+        ],
       },
       {
         language: 'Svelte',
@@ -566,7 +665,11 @@ const config: SiteConfig = {
       },
       {
         language: 'D3',
-        projects: ['twitter-sentiment-visualisation', 'happy-app', 'realtime-speech-analytics'],
+        projects: [
+          'twitter-sentiment-visualisation',
+          'happy-app',
+          'realtime-speech-analytics',
+        ],
       },
       {
         language: 'Alpine',
@@ -578,7 +681,15 @@ const config: SiteConfig = {
       },
       {
         language: 'HTML',
-        projects: ['repo-badge-maker ', 'bullet-convertor', 'md-toc-generator', 'email-extractor', 'cyber-defence-presentation', 'web-dev-school', 'md-cv-maker'],
+        projects: [
+          'repo-badge-maker ',
+          'bullet-convertor',
+          'md-toc-generator',
+          'email-extractor',
+          'cyber-defence-presentation',
+          'web-dev-school',
+          'md-cv-maker',
+        ],
       },
     ],
     mobile: [
@@ -596,7 +707,14 @@ const config: SiteConfig = {
       },
       {
         language: 'Android',
-        projects: ['Minesweper', 'anti-theft-charge', 'TuneSender', 'TreasureHunt', 'got-home-safe', 'Study-Time'],
+        projects: [
+          'Minesweper',
+          'anti-theft-charge',
+          'TuneSender',
+          'TreasureHunt',
+          'got-home-safe',
+          'Study-Time',
+        ],
       },
       // {
       //   language: 'React Native',
@@ -614,7 +732,12 @@ const config: SiteConfig = {
       },
       {
         language: 'Config',
-        projects: ['dotfiles', 'espanso-config', 'conky-system-stats-widget', 'Brewfile'],
+        projects: [
+          'dotfiles',
+          'espanso-config',
+          'conky-system-stats-widget',
+          'Brewfile',
+        ],
       },
       {
         language: 'Markdown',
@@ -623,21 +746,11 @@ const config: SiteConfig = {
     ],
   },
   techStackExtras: {
-    devOps: [
-      'Ansible', 'Kubernetes', 'Prometheus', 'GitHubActions', 'Grafana',
-    ],
-    cloud: [
-      'Netlify', 'Vercel', 'CloudFlare', 'Azure', 'AWS', 'GCP',
-    ],
-    databases: [
-      'PostgreSQL', 'SQLite', 'Redis','MySQL', 'MongoDB',
-    ],
-    testing: [
-      'Jest', 'Puppeteer', 'Enzyme', 'Cypress',
-    ],
-    security: [
-      'Nmap', 'OWASPZAP', 'BurpSuite', 'Wireshark',
-    ],
+    devOps: ['Ansible', 'Kubernetes', 'Prometheus', 'GitHubActions', 'Grafana'],
+    cloud: ['Netlify', 'Vercel', 'CloudFlare', 'Azure', 'AWS', 'GCP'],
+    databases: ['PostgreSQL', 'SQLite', 'Redis', 'MySQL', 'MongoDB'],
+    testing: ['Jest', 'Puppeteer', 'Enzyme', 'Cypress'],
+    security: ['Nmap', 'OWASPZAP', 'BurpSuite', 'Wireshark'],
   },
   plausible: {
     scriptSrc: 'https://no-track.as93.net/js/script.js',

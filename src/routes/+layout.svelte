@@ -24,7 +24,8 @@
     );
   };
 
-  const shouldShowNavBar = (pagePath: string) => !['/', '/index'].includes(pagePath);
+  const shouldShowNavBar = (pagePath: string) =>
+    !['/', '/index'].includes(pagePath);
 </script>
 
 <svelte:head>
@@ -32,8 +33,11 @@
   <meta name="color-scheme" content={$theme} />
   <link rel="stylesheet" href={$encodedThemeCss} />
   {#if config.plausible}
-    <script defer data-domain={config.plausible?.domain}
-        src={config.plausible?.scriptSrc}></script>
+    <script
+      defer
+      data-domain={config.plausible?.domain}
+      src={config.plausible?.scriptSrc}
+    ></script>
   {/if}
 
   <meta property="twitter:card" content="summary_large_image" />

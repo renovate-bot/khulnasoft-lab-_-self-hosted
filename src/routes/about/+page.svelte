@@ -32,7 +32,9 @@
     <img src={picture} alt="Users profile" />
     <div class="pages">
       {#each morePages as page}
-        <a href={page.route} style={`--page-color: ${page.color};`}>{page.label}</a>
+        <a href={page.route} style={`--page-color: ${page.color};`}
+          >{page.label}</a
+        >
       {/each}
     </div>
   </section>
@@ -44,11 +46,11 @@
 
   <!-- Technology Stack -->
   <section class="stack">
-    <TechStack/>
+    <TechStack />
   </section>
 
   <!-- Social links -->
-  <section class="soclials"></section>
+  <section class="soclials" />
 </div>
 
 <style lang="scss">
@@ -151,5 +153,4 @@
       grid-column-start: span 2;
     }
   }
-
 </style>

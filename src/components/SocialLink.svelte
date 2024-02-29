@@ -113,7 +113,7 @@
       height: 2.2rem;
       gap: 0.5rem;
       width: 90%;
-      
+
       .text-part {
         height: 2.2rem;
       }
